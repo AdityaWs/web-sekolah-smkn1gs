@@ -1,0 +1,61 @@
+
+/* HERO */
+
+.hero {
+    border-bottom: 1px solid gainsboro;
+}
+
+.hero, .hero > div {
+    height: 100vh;
+}
+
+.hero--grid > div {
+    min-height: 384px;
+}
+
+.hero--content {
+    border: 1px solid gainsboro;
+    background: #f0f0e4;
+    background: linear-gradient(45deg, rgba(240, 240, 228, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(177, 198, 211, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero--content h1 {
+    font-weight: 500;
+}
+
+.hero--content p {
+    margin: 0;
+}
+
+.hero--img {
+    padding: 0;
+    display: grid;
+    place-items: center center;
+}
+
+.hero--img img {
+    width: 75%;
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 992px) {
+    .hero--grid {
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+    }
+    .hero--content {
+        padding-top: 2rem;
+        justify-content: flex-start;
+        background: none;
+    }
+    .hero--img {
+        height: calc(100% - 384px);
+    }
+    .hero--img img {
+        max-width: 256px;
+    }
+}
