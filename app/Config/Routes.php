@@ -9,6 +9,15 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get("/", "Beranda\\Main::index");
 
-$routes->get("tentang_kami/", "Konten\\Konten::about");
+$routes->get("tentang-sekolah", "Konten\\Konten::about");
 
-$routes->get("visi_misi/", "Konten\\Konten::visi_misi");
+$routes->get("visi misi/", "Konten\\Konten::visi_misi");
+
+$routes->get("sejarah/", "Konten\\Konten::sejarah");
+
+
+$routes->get("jurusan/tkro", "Konten\\Konten::tkro");
+$routes->get("jurusan/tjkt", "Konten\\Konten::tjkt");
+$routes->get("jurusan/pemesinan", "Konten\\Konten::pemesinan");
+$routes->get("jurusan/elektronika", "Konten\\Konten::elektronika");
+$routes->get("jurusan/broadcast", "Konten\\Konten::broadcast");
